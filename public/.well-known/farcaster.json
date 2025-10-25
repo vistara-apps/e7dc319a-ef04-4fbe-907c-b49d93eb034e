@@ -7,11 +7,11 @@
   "frame": {
     "version": "next",
     "name": "AgentForge - Your NFT Agent Creator",
-    "homeUrl": "https://agentforge.xyz/app",
+    "homeUrl": "https://app-93eb034e-7o0e.vercel.app",
     "iconUrl": "https://agentforge.xyz/agentforge-icon.png",
     "splashImageUrl": "https://agentforge.xyz/agentforge-splash.png",
     "splashBackgroundColor": "#0a1929",
-    "webhookUrl": "https://agentforge.xyz/api/farcaster/webhook",
+    "webhookUrl": "https://app-93eb034e-7o0e.vercel.app/api/webhook",
     "subtitle": "Mint, customize, and socially interact with your unique NFT agents on Base",
     "description": "Create personalized NFT agents with unique traits and personality. Build your digital companion and engage with the Farcaster community through interactive frames and social features.",
     "screenshotUrls": [
@@ -20,7 +20,13 @@
       "https://agentforge.xyz/screenshots/interact.png"
     ],
     "primaryCategory": "social",
-    "tags": ["nft", "agents", "base", "social", "customization"],
+    "tags": [
+      "nft",
+      "agents",
+      "base",
+      "social",
+      "customization"
+    ],
     "heroImageUrl": "https://agentforge.xyz/hero.png",
     "tagline": "Your NFT Agent Creator",
     "ogTitle": "AgentForge - Create Your Unique NFT Agent",
