@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Coinbase Theme */
+  --color-bg: #0a1929;
+  --color-fg: #e3f2fd;
+  --color-accent: #0052ff;
+  --color-primary: #0052ff;
+  --color-surface: #132f4c;
+  --color-base-light: #1976d2;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.agent-card {
+  @apply rounded-agent;
+  border: 1px solid;
+  border-color: rgb(255 255 255 / 0.1);
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.agent-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--agent-glow);
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  @apply rounded-lg px-6 py-3 font-semibold transition-all;
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--color-base-light);
+  box-shadow: 0 4px 12px rgba(0, 82, 255, 0.3);
+}
+
+.btn-secondary {
+  @apply rounded-lg px-6 py-3 font-semibold transition-all;
+  background: var(--color-surface);
+  color: var(--color-fg);
+  border: 1px solid;
+  border-color: rgb(255 255 255 / 0.1);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-accent);
+  background: rgba(0, 82, 255, 0.1);
+}
